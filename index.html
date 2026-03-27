@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LB Sales — Infraestrutura de Atendimento de Alta Performance</title>
+  <meta name="description" content="Pare de perder vendas por desorganização interna. A LB Sales entrega uma infraestrutura Chatwoot nativa que centraliza, organiza e escala o atendimento da sua equipe comercial." />
+
+  <!-- Preconnect Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="LB Sales - Página inicial">
+        <div class="logo-mark">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="8" fill="url(#logo-grad)"/>
+            <path d="M8 22L14 10L20 18L23 14L24 22H8Z" fill="white" opacity="0.9"/>
+            <circle cx="23" cy="11" r="3" fill="#3B82F6"/>
+            <defs>
+              <linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#10B981"/>
+                <stop offset="1" stop-color="#3B82F6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="logo-text">LB<span class="logo-accent">Sales</span></span>
+      </a>
+      <nav class="header-nav" aria-label="Navegação principal">
+        <a href="#solucao" class="nav-link">Solução</a>
+        <a href="#prova-social" class="nav-link">Clientes</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#cta-final" class="btn-primary btn-sm">Agendar Diagnóstico</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Abrir menu" id="menu-toggle">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <a href="#solucao" class="mobile-nav-link">Solução</a>
+      <a href="#prova-social" class="mobile-nav-link">Clientes</a>
+      <a href="#faq" class="mobile-nav-link">FAQ</a>
+      <a href="#cta-final" class="btn-primary w-full text-center">Agendar Diagnóstico</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== SESSÃO 1: HERO ========== -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <div class="badge">
+            <i data-lucide="zap"></i>
+            <span>Infraestrutura Operacional para Equipes Comerciais</span>
+          </div>
+          <h1>A sua equipe cresceu, mas&nbsp;o controle ficou para trás...</h1>
+          <p class="hero-sub">Abandone o caos das conversas perdidas, dos SLAs descumpridos e da falta de visibilidade. Retome o controle com uma infraestrutura de atendimento projetada para performance real.</p>
+          <div class="hero-cta-group">
+            <a href="#cta-final" class="btn-primary btn-lg">
+              <i data-lucide="calendar-check"></i>
+              Agendar Meu Diagnóstico Operacional
+            </a>
+            <a href="#solucao" class="btn-ghost">
+              Ver como funciona <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-item">
+              <i data-lucide="shield-check"></i>
+              <span>Setup completo em até 7 dias</span>
+            </div>
+            <div class="trust-item">
+              <i data-lucide="trending-up"></i>
+              <span>Aumento médio de 40% na conversão</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image reveal reveal-delay">
+          <div class="dashboard-mockup">
+            <div class="mockup-top-bar">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="mockup-title">CRM Central — Painel ao Vivo</span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-sidebar">
+                <div class="sidebar-item active">
+                  <i data-lucide="inbox"></i>
+                  <span>Caixa de Entrada</span>
+                  <span class="badge-count">24</span>
+                </div>
+                <div class="sidebar-item">
+                  <i data-lucide="message-circle"></i>
+                  <span>Conversas</span>
+                </div>
+                <div class="sidebar-item">
+                  <i data-lucide="bar-chart-2"></i>
+                  <span>Relatórios</span>
+                </div>
+                <div class="sidebar-item">
+                  <i data-lucide="users"></i>
+                  <span>Equipe</span>
+                </div>
+              </div>
+              <div class="mockup-main">
+                <div class="chat-list">
+                  <div class="chat-item unread">
+                    <div class="avatar av-green">MA</div>
+                    <div class="chat-meta">
+                      <span class="chat-name">Marcos Alves</span>
+                      <span class="chat-preview">Quero fechar o plano Pro ainda hoje...</span>
+                    </div>
+                    <span class="chat-time">2m</span>
+                  </div>
+                  <div class="chat-item">
+                    <div class="avatar av-blue">JF</div>
+                    <div class="chat-meta">
+                      <span class="chat-name">Julia Ferreira</span>
+                      <span class="chat-preview">Quando vocês fazem o onboarding?</span>
+                    </div>
+                    <span class="chat-time">15m</span>
+                  </div>
+                  <div class="chat-item">
+                    <div class="avatar av-purple">RL</div>
+                    <div class="chat-meta">
+                      <span class="chat-name">Ricardo Lima</span>
+                      <span class="chat-preview">Ótimo atendimento! Recomendarei...</span>
+                    </div>
+                    <span class="chat-time">1h</span>
+                  </div>
+                </div>
+                <div class="metrics-grid">
+                  <div class="metric-card">
+                    <span class="metric-label">Tempo Médio de Resposta</span>
+                    <span class="metric-value green">1m 42s</span>
+                    <span class="metric-change up">↑ 28%</span>
+                  </div>
+                  <div class="metric-card">
+                    <span class="metric-label">SLA Cumprido</span>
+                    <span class="metric-value blue">94%</span>
+                    <span class="metric-change up">↑ 12%</span>
+                  </div>
+                  <div class="metric-card">
+                    <span class="metric-label">Conversões Hoje</span>
+                    <span class="metric-value green">37</span>
+                    <span class="metric-change up">↑ 41%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <!-- ========== SESSÃO 2: DORES ========== -->
+    <section id="dores" class="dores-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Diagnóstico Real</span>
+          <h2>O seu maior gargalo não é a falta de leads.<br/>É a desorganização interna.</h2>
+          <p class="section-desc">Enquanto sua equipe cresce sem estrutura, cada nova contratação amplifica o caos — não o resultado.</p>
+        </div>
+        <div class="dores-grid">
+          <article class="dor-card reveal">
+            <div class="dor-icon icon-red">
+              <i data-lucide="clock-alert"></i>
+            </div>
+            <h3>SLAs invisíveis e descumpridos</h3>
+            <p>Nenhum vendedor sabe exatamente em quanto tempo deve responder. O lead espera, esfria e some. Sem rastreamento, sem culpados, sem correção.</p>
+          </article>
+          <article class="dor-card reveal reveal-delay">
+            <div class="dor-icon icon-orange">
+              <i data-lucide="git-branch"></i>
+            </div>
+            <h3>Conversas espalhadas sem dono</h3>
+            <p>WhatsApp pessoal, e-mail, Instagram, Telegram — cada vendedor tem seu silo. Quando alguém sai, o histórico vai junto. A empresa perde a memória.</p>
+          </article>
+          <article class="dor-card reveal reveal-delay-2">
+            <div class="dor-icon icon-amber">
+              <i data-lucide="trending-down"></i>
+            </div>
+            <h3>Gestão no escuro, sem auditoria</h3>
+            <p>Como gestor, você não consegue auditar conversas, identificar o que funciona ou escalar o que dá resultado. Decisão sem dado é aposta.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SESSÃO 3: SOLUÇÃO ========== -->
+    <section id="solucao" class="solucao-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">A Solução</span>
+          <h2>Retome as rédeas do seu negócio</h2>
+          <p class="section-desc">Uma plataforma Chatwoot nativa, configurada sob medida, que transforma o atendimento caótico em uma operação de precisão.</p>
+        </div>
+
+        <!-- Z-Pattern item 1 -->
+        <div class="z-row reveal">
+          <div class="z-text">
+            <div class="feature-icon-wrap">
+              <i data-lucide="inbox"></i>
+            </div>
+            <h3>Caixa de Entrada Compartilhada</h3>
+            <p>Todos os canais (WhatsApp, Instagram, e-mail, chat) convergem em um único painel. Nenhum lead cai pelas rachaduras. Nenhuma mensagem fica sem resposta.</p>
+            <ul class="feature-list">
+              <li><i data-lucide="check"></i> Unificação de todos os canais</li>
+              <li><i data-lucide="check"></i> Histórico completo por contato</li>
+              <li><i data-lucide="check"></i> Visibilidade em tempo real para o gestor</li>
+            </ul>
+          </div>
+          <div class="z-visual">
+            <div class="feature-visual inbox-visual">
+              <div class="visual-header">
+                <span class="channel-badge whatsapp"><i data-lucide="smartphone"></i> WhatsApp</span>
+                <span class="channel-badge instagram"><i data-lucide="instagram"></i> Instagram</span>
+                <span class="channel-badge email"><i data-lucide="mail"></i> E-mail</span>
+              </div>
+              <div class="visual-convergence">
+                <div class="conv-arrow"></div>
+                <div class="conv-center">
+                  <i data-lucide="inbox"></i>
+                  <span>Central Unificada</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Z-Pattern item 2 (invertido) -->
+        <div class="z-row z-reverse reveal">
+          <div class="z-text">
+            <div class="feature-icon-wrap">
+              <i data-lucide="users-round"></i>
+            </div>
+            <h3>Divisão Inteligente e Fila Automática</h3>
+            <p>Distribua conversas por habilidade, disponibilidade ou round-robin. Regras automáticas eliminam o gargalo humano da triagem e garantem que cada lead chegue ao especialista certo.</p>
+            <ul class="feature-list">
+              <li><i data-lucide="check"></i> Roteamento automático por regras</li>
+              <li><i data-lucide="check"></i> Controle de carga por agente</li>
+              <li><i data-lucide="check"></i> Respostas-padrão e automações</li>
+            </ul>
+          </div>
+          <div class="z-visual">
+            <div class="feature-visual team-visual">
+              <div class="agents-grid">
+                <div class="agent-card available">
+                  <div class="agent-avatar">VC</div>
+                  <span>Victor</span>
+                  <span class="status-dot available"></span>
+                </div>
+                <div class="agent-card busy">
+                  <div class="agent-avatar">AM</div>
+                  <span>Amanda</span>
+                  <span class="status-dot busy"></span>
+                </div>
+                <div class="agent-card available">
+                  <div class="agent-avatar">PL</div>
+                  <span>Pedro</span>
+                  <span class="status-dot available"></span>
+                </div>
+              </div>
+              <div class="assignment-bar">
+                <div class="assign-item"><span>Leads hoje</span><strong class="green">47</strong></div>
+                <div class="assign-item"><span>Em atendimento</span><strong class="blue">12</strong></div>
+                <div class="assign-item"><span>Aguardando</span><strong>3</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Z-Pattern item 3 -->
+        <div class="z-row reveal">
+          <div class="z-text">
+            <div class="feature-icon-wrap">
+              <i data-lucide="message-square-share"></i>
+            </div>
+            <h3>Colaboração Interna em Tempo Real</h3>
+            <p>Mencione colegas diretamente na conversa, adicione notas privadas para contexto estratégico e escale situações complexas sem sair da janela do atendimento.</p>
+            <ul class="feature-list">
+              <li><i data-lucide="check"></i> Notas internas privadas</li>
+              <li><i data-lucide="check"></i> @menções entre agentes</li>
+              <li><i data-lucide="check"></i> Histórico auditável para gestão</li>
+            </ul>
+          </div>
+          <div class="z-visual">
+            <div class="feature-visual collab-visual">
+              <div class="collab-note">
+                <span class="note-author">🔒 Nota interna — Pedro L.</span>
+                <p>@Victor esse lead é quente, ele já testou a concorrência. Usa o script premium e fecha já.</p>
+              </div>
+              <div class="collab-tag">
+                <span class="tag">VIP</span>
+                <span class="tag">Decisor</span>
+                <span class="tag">Urgente</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SESSÃO 4: PROVA SOCIAL ========== -->
+    <section id="prova-social" class="prova-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Confiança</span>
+          <h2>Operações que confiam na nossa infraestrutura</h2>
+        </div>
+
+        <!-- Marquee de logos -->
+        <div class="marquee-wrapper" aria-label="Clientes parceiros" role="marquee">
+          <div class="marquee-track">
+            <div class="marquee-content">
+              <div class="logo-pill">TechVentures</div>
+              <div class="logo-pill">Nexus CRM</div>
+              <div class="logo-pill">FlowOps</div>
+              <div class="logo-pill">Altera Digital</div>
+              <div class="logo-pill">ProSales Hub</div>
+              <div class="logo-pill">OmniDesk</div>
+              <div class="logo-pill">Elevate Co.</div>
+              <div class="logo-pill">DataCore</div>
+            </div>
+            <!-- Duplicado para loop perfeito -->
+            <div class="marquee-content" aria-hidden="true">
+              <div class="logo-pill">TechVentures</div>
+              <div class="logo-pill">Nexus CRM</div>
+              <div class="logo-pill">FlowOps</div>
+              <div class="logo-pill">Altera Digital</div>
+              <div class="logo-pill">ProSales Hub</div>
+              <div class="logo-pill">OmniDesk</div>
+              <div class="logo-pill">Elevate Co.</div>
+              <div class="logo-pill">DataCore</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pilares de Infraestrutura -->
+        <div class="infra-grid">
+          <article class="infra-card reveal">
+            <div class="infra-icon">
+              <i data-lucide="shield"></i>
+            </div>
+            <h3>Infraestrutura Segura</h3>
+            <p>Dados hospedados em servidores dedicados, backups automáticos e conformidade com a LGPD. A proteção dos seus dados e dos seus clientes é inegociável.</p>
+          </article>
+          <article class="infra-card reveal reveal-delay">
+            <div class="infra-icon">
+              <i data-lucide="settings-2"></i>
+            </div>
+            <h3>Configuração Sob Medida</h3>
+            <p>Não é uma ferramenta que você instala sozinho. É uma solução configurada por especialistas do começo ao fim, alinhada ao seu processo comercial existente.</p>
+          </article>
+          <article class="infra-card reveal reveal-delay-2">
+            <div class="infra-icon">
+              <i data-lucide="cloud"></i>
+            </div>
+            <h3>Escalabilidade em Nuvem</h3>
+            <p>Da equipe de 3 para a de 50, a plataforma cresce junto com você sem reconfiguração, sem downtime e sem custo proporcional explosivo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SESSÃO 5: FAQ ========== -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="faq-inner">
+          <div class="section-header reveal">
+            <span class="eyebrow">Perguntas Frequentes</span>
+            <h2>Respostas diretas para<br/>decisões estratégicas</h2>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item reveal">
+              <button class="faq-question" aria-expanded="false">
+                <span>Quanto tempo leva para a plataforma estar operacional?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </button>
+              <div class="faq-answer">
+                <p>O setup completo — desde a configuração dos canais até o treinamento da equipe — leva, em média, de 5 a 7 dias úteis. Trabalhamos em paralelo com a sua operação para que não haja interrupção no atendimento.</p>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" aria-expanded="false">
+                <span>Preciso ter conhecimento técnico para usar?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Não. A plataforma é intuitiva e projetada para equipes comerciais — não de TI. Fazemos toda a configuração técnica, as integrações e entregamos o painel pronto para o seu time simplesmente usar.</p>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" aria-expanded="false">
+                <span>O que acontece se algum canal parar de funcionar?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Você terá suporte técnico dedicado via canal prioritário. Problemas críticos têm SLA de resolução em até 2 horas durante horário comercial, com monitoramento proativo da infraestrutura 24/7.</p>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-question" aria-expanded="false">
+                <span>Como funciona a integração com WhatsApp e outros canais?</span>
+                <i data-lucide="chevron-down" class="faq-chevron"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Realizamos a integração oficial via WhatsApp Business API (sem risco de banimento), além de Instagram Direct, e-mail, Telegram e chat web. Cada canal é mapeado e testado antes do go-live.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SESSÃO 6: CTA FINAL ========== -->
+    <section id="cta-final" class="cta-final-section">
+      <div class="cta-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="cta-inner reveal">
+          <span class="eyebrow">Próximo Passo</span>
+          <h2>A decisão de parar de perder vendas começa com uma conversa de 30 minutos.</h2>
+          <p>Agende um Diagnóstico Operacional gratuito. Vamos analisar a sua operação atual e mostrar exatamente onde está o vazamento de receita — sem compromisso.</p>
+          <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20um%20Diagnóstico%20Operacional." class="btn-primary btn-xl" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="calendar-check"></i>
+            Solicitar Diagnóstico Gratuito
+          </a>
+          <p class="cta-note"><i data-lucide="lock"></i> Sem cartão de crédito. Sem compromisso. 100% gratuito.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <a href="#" class="logo" aria-label="LB Sales">
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="url(#logo-grad-footer)"/>
+            <path d="M8 22L14 10L20 18L23 14L24 22H8Z" fill="white" opacity="0.9"/>
+            <circle cx="23" cy="11" r="3" fill="#3B82F6"/>
+            <defs>
+              <linearGradient id="logo-grad-footer" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#10B981"/>
+                <stop offset="1" stop-color="#3B82F6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="logo-text">LB<span class="logo-accent">Sales</span></span>
+        </a>
+      </div>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </nav>
+      <p class="footer-copy">&copy; 2025 LB Sales. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
